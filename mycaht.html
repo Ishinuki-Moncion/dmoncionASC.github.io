@@ -1,0 +1,32 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <!-- What user will use for input -->
+    <input placeholder='Name' type='text' id='name'>
+    <input placeholder='Message' type='text' id='message'>
+    <!-- button for sending message to message board -->
+    <button onclick='sendMessage()' id='js'>Use Plain JS</button>
+    <!-- Empty div where the messages will show up -->
+    <div id='messageBoard'></div>
+    <!-- Paste your snippet here, will include firebase CDN -->
+
+<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB65LID4sk7bA3kemQaOpHXM9hezt-9-EA",
+    authDomain: "chat-room-c8fe0.firebaseapp.com",
+    databaseURL: "https://chat-room-c8fe0.firebaseio.com",
+    storageBucket: "chat-room-c8fe0.appspot.com",
+  };
+  firebase.initializeApp(config);
+</script>
+    
+
+    <!-- adding jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!-- script we'll make dynamic changes with. You'll have to create this file -->
+    <script src='mychat.js'></script>
+  </body>
+</html>

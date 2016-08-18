@@ -1,0 +1,218 @@
+body{
+  background: #fff;
+  background-color: white;
+
+}
+
+/*.cable{height:200px; width:10px; background-color:black; margin:0 50%;}*/ /*the 50 percent alligns the cable to be center*/
+/*this will connect to the visulaizer but i was planning on using it until it looks better without it */
+
+.keyboard-frame{ /*this aligns the letters in html to be formatted to a key board style*/
+  width:600px; 
+  height: 300px; /*the height and width of the board*/
+  background-color: none; /*this is the frame color*/
+  margin: 0px auto; /*this centers the margin*/
+  border-radius: 15px; /*the border edges how smooth*/
+  padding: 40px;
+  color: black; /*this is the key color*/
+}
+/*//keyboard text and keyboard frame*/
+.label{
+  color: black;
+  font: bold 10pt arial;
+  width: 44px; height:41px;
+  display:block;
+  background: #eff0f2;
+  text-align: center;
+  padding-left: 8px;
+  line-height: 29px;
+  border-radius:3px;
+  float:left; margin-left: 2px; 
+  margin-bottom:5px;
+  margin: 2px;
+  cursor: pointer;
+
+  box-shadow: 0px 0px 10px blue; /*this makes all the keys to be higlighted*/
+  transition: box-shadow 0.3s ease; /*this makes the glow appear with a delay*/
+}
+.numbers{
+  color: black;
+  font: bold 10pt arial;
+  width: 100px; height:41px;
+  display:block;
+  background: #eff0f2;
+  text-align: center;
+  padding-left: 60.50px;
+  line-height: 29px;
+  border-radius:3px;
+  float:left; margin-left: 2px; 
+  margin-bottom:5px;
+  margin: 2px;
+  cursor: pointer;
+
+  box-shadow: 0px 0px 10px blue; /*this makes all the keys to be higlighted*/
+  transition: box-shadow 0.3s ease; /*this makes the glow appear with a delay*/}
+.key active; .keyWentDown:hover{box-shadow:0px 0px 10px yellow; z-index:1000;}
+
+
+
+#header{
+  font-family: "Brush Script MT", cursive;
+  font-size: 36px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 39.6px;
+  margin:0px auto;
+  text-align: center}
+.key-section{width:650px; height:260px; float:left;}
+.deletekey-section{width:150px; height:260px; float:left;}
+.small{font-size:10px; line-height:13px; text-align: center; padding:0 5px; padding-top:2px; height:28px !important;}
+.dual {font-size: 14px; line-height: 20px; width:30px; }
+.backspace {width:84px; font-size: 12px;}
+.tab {width: 50px; line-height: 40px; font-size:13px;}
+.letter{width:30px;}
+.slash{width:64px;}
+.caps{width:70px; font-size:12px; line-height:18px;}
+.enter{width:92px; line-height:40px; text-align: center; padding-left:0;}
+.shift.left{width: 90px;line-height: 40px; font-size:13px;}
+.shift.right{width: 104px;line-height: 40px; font-size:13px;}
+.space {width: 625px;}
+.key:hover{box-shadow:0px 0px 10px yellow; z-index:1000;}
+.purp01 { background: #800000}
+.purp02 {
+    background: #880000;
+}
+.purp03 {
+    background: #8F0000;
+}
+.purp04 {
+    background: #970000;
+}
+.purp05 {
+    background: #9E0000;
+}
+.purp06 {
+    background: #A60000;
+}
+.purp07 {
+    background: #AE0000;
+}
+.purp08 {
+    background: #B50000;
+}
+.purp09 {
+    background: #BD0000;
+}
+.purp10 {
+    background: #C40000;
+}
+.jade01 {
+    background: #3333FF;
+}
+.jade02 {
+    background:  #383DFF;
+}
+.jade03 {
+    background: #3D47FF;
+}
+.jade04 {
+    background: #4252FF;
+}
+.jade05 {
+    background: #475CFF;
+}
+.jade06 {
+    background: #4C66FF;
+}
+.jade07 {
+    background:  #5270FF;
+}
+.jade08 {
+    background: #577AFF;
+}
+.jade09 {
+    background: #5C85FF;
+}
+.jade10 {
+    background: #5E8AFF;
+}
+.jade11 {
+    background: #618FFF;
+}
+.jade12 {
+    background: #6394FF;
+}
+.green01 {
+    background:  #00CCFF;
+}
+.green02 {
+    background: #14D1FF;
+}
+.green03 {
+    background: #29D6FF;
+}
+.green04 {
+    background: #3DDBFF;
+}
+.green05 {
+    background:#52E0FF;
+}
+.green06 {
+    background: #5CE3FF;
+}
+.green07 {
+    background: #70E8FF;
+}
+.green08 {
+    background: #85EDFF;
+}
+.green09 {
+    background: #99F2FF;
+}
+.green10 {
+    background: #ADF7FF;
+}
+.green11 {
+    background: #C2FCFF;
+}
+.peach01 {
+    background: #000066;
+}
+.peach02 {
+    background: #050A75;
+}
+.peach03 {
+    background: #0A1485;
+}
+.peach04 {
+    background: #0F1F94; 
+}
+.peach05 {
+    background: #1429A3;
+}
+.peach06 {
+    background:  #1A33B2;
+}
+.peach07 {
+    background: #1F3DC2;
+}
+.peach08 {
+    background: #2447D1;
+}
+.peach09 {
+    background: #2952E0;
+}
+.peach10 {
+    background: #2E5CF0;
+}
+.nu {
+    background: #bbb;
+}
+/*.Numb-Pad .key{width: 32px; font-size:10px; text-align:left; line-height:40px; float:left;
+}
+.Numb-Pad2 .key{width: 32px; font-size:10px; text-align:left; line-height:40px; float:left;
+}
+.Numb-Pad3 .key{width: 32px; font-size:10px; text-align:left; line-height:40px; float:left;
+}*/
+/*this is where it highlights the text selected*/

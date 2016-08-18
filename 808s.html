@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>808s&Kicks</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.2/p5.js"></script>
+   <!--  <script src="p5.play.js"></script>
+    <script src="project.js"></script>  -->   
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript" src="808s.js"></script>
+    <script src="p5.play.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="808s.css" />
+</head>
+<body>
+<h1 id="header">Beats By YOU</h1>
+<!-- <div class="cable"></div> this is for the cable which is not used-->
+<div class="keyboard-frame">
+  
+  
+  
+  <div class="key-section">
+  
+    <div class="label dual nu">~<br>`</div>
+
+    <div class="numbers dual key purp01">
+        <br>1
+    </div>
+
+    <div class="numbers dual key purp03">
+        <br>2
+    </div>
+
+    <div class="numbers dual key purp05">
+       <br>3
+    </div>
+
+    <div class="numbers dual key purp07">
+        <br>4
+    </div>
+
+
+    <div class="label dual key purp09">
+        <br>0
+    </div>
+
+    <div class="label dual nu"><br>-</div>
+    <div class="label dual nu"><br>=</div>
+    <div class="label backspace nu">Backspace</div>
+   <!--end to first row number labels -->
+    
+    <div class="label tab nu">Tab</div>
+    <div class="label letter key jade01" onclick="playMyAudio('squeek')">Q</div>
+    <div class="label letter key jade02" onclick="playMyAudio('squeek')">W</div>
+    <div class="label letter key jade03" onclick="playMyAudio('squeek')">E</div>
+    <div class="label letter key jade04" onclick="playMyAudio('squeek')">R</div>
+    <div class="label letter key jade05" onclick="playMyAudio('squeek')">T</div>
+    <div class="label letter key jade06"onclick="playMyAudio('squeek')">Y</div>
+    <div class="label letter key jade07"onclick="playMyAudio('squeek')">U</div>
+    <div class="label letter key jade08"onclick="playMyAudio('squeek')">I</div>
+    <div class="label letter key jade09"onclick="playMyAudio('squeek')">O</div>
+    <div class="label letter key jade10"onclick="playMyAudio('squeek')">P</div>
+    <div class="label dual key jade11"onclick="playMyAudio('squeek')">{<Br>[</div>
+    <div class="label dual key jade12"onclick="playMyAudio('squeek')">}<br>]</div>
+    <div class="label letter dual slash nu"|<br>\</div>
+    <!-- end to second rows of labels -->
+
+    <div class="label caps nu">Caps<br>Lock</div>
+    <div class="label letter key green01"onclick="playMyAudio('squeek')">A</div>
+    <div class="label letter key green02"onclick="playMyAudio('squeek')">S</div>
+    <div class="label letter key green03"onclick="playMyAudio('squeek')">D</div>
+    <div class="label letter key green04"onclick="playMyAudio('squeek')">F</div>
+    <div class="label letter key green05"onclick="playMyAudio('squeek')">G</div>
+    <div class="label letter key green06"onclick="playMyAudio('squeek')">H</div>
+    <div class="label letter key green07"onclick="playMyAudio('squeek')">J</div>
+    <div class="label letter key green08"onclick="playMyAudio('squeek')">K</div>
+    <div class="label letter key green09"onclick="playMyAudio('squeek')">L</div>
+    <div class="label dual key green10"onclick="playMyAudio('squeek')">:<br>;</div>
+    <div class="label dual key green11"onclick="playMyAudio('squeek')">"<br>'</div>
+    <div class="label enter nu">Enter</div>
+   <!--  end to 3rd set of labels -->
+    
+    <div class="label shift left nu">Shift</div>
+    <div class="label letter key peach01"onclick="playMyAudio('squeek')">Z</div>  
+    <div class="label letter key peach02"onclick="playMyAudio('squeek')">X</div>
+    <div class="label letter key peach03"onclick="playMyAudio('squeek')">C</div>
+    <div class="label letter key peach04"onclick="playMyAudio('squeek')">V</div>
+    <div class="label letter key peach05"onclick="playMyAudio('squeek')">B</div>
+    <div class="label letter key peach06"onclick="playMyAudio('squeek')">N</div>
+    <div class="label letter key peach07"onclick="playMyAudio('squeek')">M</div>
+    <div class="label dual key peach08"onclick="playMyAudio('squeek')"> < <br>,</div>
+    <div class="label dual key peach09"onclick="playMyAudio('squeek')"> > <br>.</div>
+    <div class="label dual key peach10"onclick="playMyAudio('squeek')" >?<br>/</div>
+    <div class="label shift right nu">Shift</div>
+    <!-- end to 4th set of labels -->
+    <div class="label space nu"></div>
+    <!-- space bar -->
+  </div><!-- end label section-->
+
+   <!-- <div class="Numb-Pad">
+    <div class="label">
+      7
+    </div>
+    <div class="label">
+      8
+    </div>
+    <div class="label">
+      9
+    </div>
+    </div>
+   
+   <div class="Numb-Pad2">
+
+    <div class="label">
+      4
+    </div>
+      <div class="label">
+      5
+    </div>
+        <div class="label">
+      6
+    </div>
+    </div>
+
+    <div class="Numb-Pad3">
+
+        <div class="label">
+      1
+    </div>
+    <div class="label">
+      2
+    </div>
+    <div class="label">
+      3
+    </div>
+    <div class="label">
+      0
+    </div>
+    </div>
+    -->
+      
+
+  <!-- <div class="deletelabel-section">
+   
+    <div class="label">
+      Del
+    </div>  
+    
+  </div> --><!--end to delete-label row, this creates a delete button to appear in the bo-->
+  
+</div>
+<!-- <textarea id="write" rows="6" cols="60"></textare> <! this sets the history of label strokes -->
+
+</body>
+</html>
